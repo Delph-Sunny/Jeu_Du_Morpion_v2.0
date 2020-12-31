@@ -16,30 +16,28 @@ body {
   background-color: var(--appbg);
 }
 
-.wrapper {
+.content {
   background: var(--tbbg);
   border-radius: 25px;
   width: 300px;
   height: 300px;
-  display: table;
+  margin: 0.4vw 0;
+  padding: 0.4vw;
 }   
 
-.table td {
-  border-top: none;
-  vertical-align: inherit;
-  width: 33.33%;
-  height: 33.33%;
+.tic-box {
+ 
+  font-size: 5vw;
+  color: var(--textall);
+  text-align: center;
 }
 
-.tic-box {    
-  font-size: 2rem ;
+.tic-container {    
   background: var(--tbbg);
-  text-align: center;
-  color: var(--textall);
   height: 96%;    
 }
 
-td:hover {
+.tic-box:hover {
   background:var(--hoverbg);
 }
 

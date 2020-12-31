@@ -15,9 +15,9 @@
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <!--Font Awesome-->   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Javascript: jQuery first, then Popper.js, then Bootstrap JS -->
     <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -25,7 +25,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-        <!--My script to customize-->
+    <!--My script to customize-->
     <script defer src="./assets/js/script.js"></script>
 
 </head>
@@ -37,31 +37,29 @@
             <h1 class="mx-auto">Jeu du Morpion</h1>
         </div>
         <!-- Grid for game -->
-        <div class="wrapper col-12 mx-auto p-3">
-            <table class="table table-dark table-lg tic-box mt-2">
-                <tbody>
-                    <tr>
-                        <td id="tic-1"></td>
-                        <td id="tic-2"></td>
-                        <td id="tic-3"></td>
-                    </tr>
-                    <tr>
-                        <td id="tic-4"></td>
-                        <td id="tic-5"></td>
-                        <td id="tic-6"></td>
-                    </tr>
-                    <tr>
-                        <td id="tic-7"></td>
-                        <td id="tic-8"></td>
-                        <td id="tic-9"></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="content col-12 col-sm-6 ">
+            <div class="container-fluid tic-container">
+                <div class="row tic-row">
+                    <div class="col-4 tic-box" id="tic-1"></div>
+                    <div class="col-4 tic-box" id="tic-2"></div>
+                    <div class="col-4 tic-box" id="tic-3"></div>
+                </div>
+                <div class="row tic-row">
+                    <div class="col-4 tic-box" id="tic-4"></div>
+                    <div class="col-4 tic-box" id="tic-5"></div>
+                    <div class="col-4 tic-box" id="tic-6"></div>
+                </div>
+                <div class="row tic-row">
+                    <div class="col-4 tic-box" id="tic-7"></div>
+                    <div class="col-4 tic-box" id="tic-8"></div>
+                    <div class="col-4 tic-box" id="tic-9"></div>
+                </div>
+            </div>
         </div>
         <!-- Inform area for player's turn -->
-        <div class="col-6 text-center text-light bg-dark mt-3 mx-auto">                     
-            <h5 id="tooltips">Tour du joueur 1</h5> 
-        </div> 
+        <div class="col-6 text-center text-light bg-dark mt-3 mx-auto">
+            <h5 id="tooltips">Tour du joueur 1</h5>
+        </div>
         <div class="row p-5 ">
             <button class="btn btn-info mx-auto" type="reset">Recommencer</button>
         </div>

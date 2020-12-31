@@ -1,6 +1,6 @@
 var joueurNb = 1; // Initializing player turn
 
-$("table").on("click", "td", function () {
+$(".tic-container").on("click", ".tic-box", function () {
     // Check if cell already full
     if ($(this).text() == "X" || $(this).text() == "O") {
         $(this).css("background-color", "red");
@@ -25,5 +25,5 @@ $("table").on("click", "td", function () {
 $(".btn-info").on("click", function reset() {
     joueurNb = 1;
     $("#tooltips").text("Tour du joueur 1");
-    $("td").empty()
+    $(".tic-box").empty()
 });
