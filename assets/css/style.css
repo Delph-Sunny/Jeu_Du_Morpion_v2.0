@@ -1,0 +1,57 @@
+/*Variables for color */
+:root {
+  --appbg:  #afeffa;
+  --textall: lavender;
+  --tbborder: white;
+  --hoverbg: #333535; 
+  --tbbg:  #000;
+}
+
+body {
+  background-image: url('../images/snowflake5.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--appbg);
+}
+
+.wrapper {
+  background: var(--tbbg);
+  border-radius: 25px;
+  width: 300px;
+  height: 300px;
+  display: table;
+}   
+
+.table td {
+  border-top: none;
+  vertical-align: inherit;
+  width: 33.33%;
+  height: 33.33%;
+}
+
+.tic-box {    
+  font-size: 2rem ;
+  background: var(--tbbg);
+  text-align: center;
+  color: var(--textall);
+  height: 96%;    
+}
+
+td:hover {
+  background:var(--hoverbg);
+}
+
+#tic-1, #tic-2, #tic-3 {
+  border-bottom: solid var(--tbborder) 5px;   
+}
+
+#tic-2, #tic-5, #tic-8 {
+  border-right: solid var(--tbborder) 5px;
+  border-left: solid var(--tbborder) 5px;    
+}
+
+#tic-7, #tic-8, #tic-9 {
+  border-top: solid var(--tbborder) 5px;    
+}
