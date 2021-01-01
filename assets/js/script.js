@@ -2,8 +2,7 @@ var joueurNb = 1; // Initializing player turn
 var symbol = ""; // Initializing symbol
 
 
-
-/* Check for Winning move */
+/* Check for winning move */
 function check(cell) {
     if ($("#tic-1").hasClass(cell) &&
         $("#tic-2").hasClass(cell) &&
@@ -71,48 +70,46 @@ function reset() {
     joueurNb = 1;
     $("#tooltips").text("Player 1 turn (X)");
     $(".tic-box").removeClass("fa fa-circle-o fa-times won");
-    $(".tic-box").removeClass("hover");
 }
 
-
+/* Playing */
 $(".tic-container").on("click", ".tic-box", function () {
+    // Check if previous click won
     if ($("h5:contains('GAME OVER')").length) {
         reset()
-    } else
-        // Check if cell already full
-        if ($(this).hasClass("fa fa-times") || $(this).hasClass("fa fa-circle-o")) {
-            $(this).addClass("error");
-            setTimeout(() => {
-                $(this).removeClass("error");
-            }, 500);
+    } 
+    // Check if cell already full
+    else if ($(this).hasClass("fa fa-times") || $(this).hasClass("fa fa-circle-o")) {
+        $(this).addClass("error");
+        setTimeout(() => {
+            $(this).removeClass("error");
+        }, 500);
+    }
+    // Alternating players
+    else if (joueurNb == 1) {
+        symbol = "fa fa-times";
+        $(this).addClass(symbol);
+        if (check(symbol)) {
+            $("#tooltips").text("GAME OVER: Player 1 won!");
+        } else {
+            $("#tooltips").text("Player 2 turn (O)");
+            joueurNb = 2;
         }
-        // Alternating players
-        else if (joueurNb == 1) {
-            symbol = "fa fa-times";
-            $(this).addClass(symbol);
-            if (check(symbol)) {
-                $("#tooltips").text("GAME OVER: Player 1 won!");
-            } else {
-                $("#tooltips").text("Player 2 turn (O)");
-                joueurNb = 2;
-            }
+    }
+    else {
+        symbol = "fa fa-circle-o";
+        $(this).addClass(symbol);
+        if (check(symbol)) {
+            $("#tooltips").text("GAME OVER: Player 2 won!");
+        } else {
+            $("#tooltips").text("Player 1 turn (X)");
+            joueurNb = 1;
         }
-        else {
-            symbol = "fa fa-circle-o";
-            $(this).addClass(symbol);
-            if (check(symbol)) {
-                $("#tooltips").text("GAME OVER: Player 2 won!");
-            } else {
-                $("#tooltips").text("Player 1 turn (X)");
-                joueurNb = 1;
-            }
-        }
+    }
 });
 
-
-
 /* Reset  game */
-$(".btn-info").click(function () {
+$(".btn-lg").click(function () {
     reset();
 });
 
