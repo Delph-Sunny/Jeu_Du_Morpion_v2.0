@@ -5,40 +5,61 @@
   --tbborder: white;
   --hoverbg: #333535; 
   --tbbg:  #000;
+  --errorbg: #FB232E;
+  --wontext: green;
 }
 
 body {
-  background-image: url('../images/snowflake5.gif');
+  background-image: url('../images/backgrd.jpg'); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-color: var(--appbg);
 }
+#tooltips { 
+  font-size: 4vw; 
+}
 
 .content {
   background: var(--tbbg);
   border-radius: 25px;
-  width: 300px;
-  height: 300px;
-  margin: 0.4vw 0;
-  padding: 0.4vw;
+  height: 33vh;
+  margin-right: 10vw;
+  padding: 1vw;
 }   
 
-.tic-box {
- 
-  font-size: 5vw;
+.tic-row {
+  height: 32%;
+}
+
+.fa { 
   color: var(--textall);
+  font-size: 2vw !important; 
+}
+
+.tic-box {
+  /* if percent doesn't work try vh/vw */
+  line-height: 10vh;  
+  padding-top: 2vh;
   text-align: center;
 }
 
 .tic-container {    
   background: var(--tbbg);
-  height: 96%;    
+  height: 94%;    
+}
+
+.error {
+  background: var(--errorbg) !important;
 }
 
 .tic-box:hover {
   background:var(--hoverbg);
+}
+
+.won {
+  background: var(--wontext) !important;
 }
 
 #tic-1, #tic-2, #tic-3 {
@@ -52,4 +73,25 @@ body {
 
 #tic-7, #tic-8, #tic-9 {
   border-top: solid var(--tbborder) 5px;    
+}
+
+/* On screens that are 1201px or less, set the symbols size */
+@media screen and (max-width: 1201px) {
+  .fa { 
+    font-size: 3vw !important; 
+  }
+}
+
+/* On screens that are 1024px or less, set the symbols size */
+@media screen and (max-width: 1024px) {
+  .fa { 
+    font-size: 5vw !important; 
+  }
+}
+
+/* On screens that are 768px or less, set the symbols size */
+@media screen and (max-width: 481px) {
+  .fa { 
+    font-size: 8vw !important; 
+  }
 }
