@@ -1,16 +1,11 @@
-# Jeu_du_Morpion_v2.0
-
----
-
-IN PROGRESS
-:sweat_smile:
+# Tic-Tac-Toe_v2.0
 
 ---
 
 ## Description 
 
-This is a different version of Jeu_Du_Morpion_v1.0. The goal is still to build a simple tic-tac-toe using a Bootstrap however the table is replaced by simple col and row.  
-A tbd-theme animated background is part of this game.  
+This is a different version of Jeu_Du_Morpion_v1.0. The goal is still to build a simple tic-tac-toe using a Bootstrap however the table is replaced by simple col and row with full responsiveness.
+.  
 
 App's URL: [link]
 
@@ -37,4 +32,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  
 
 ---
-[link]: https://delph-sunny.github.io/Jeu_Du_Morpion_v2.0/
+[link]: https://delph-sunny.github.io/Tic-Tac-Toe_v2.0/

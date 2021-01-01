@@ -35,7 +35,7 @@ body {
 
 .fa { 
   color: var(--textall);
-  font-size: 2vw !important; 
+  font-size: 3vw !important; 
 }
 
 .tic-box {
@@ -78,7 +78,7 @@ body {
 /* On screens that are 1201px or less, set the symbols size */
 @media screen and (max-width: 1201px) {
   .fa { 
-    font-size: 3vw !important; 
+    font-size: 4vw !important; 
   }
 }
 
@@ -89,7 +89,7 @@ body {
   }
 }
 
-/* On screens that are 768px or less, set the symbols size */
+/* On screens that are 481px or less, set the symbols size */
 @media screen and (max-width: 481px) {
   .fa { 
     font-size: 8vw !important; 
