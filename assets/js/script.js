@@ -90,7 +90,7 @@ $(".tic-container").on("click", ".tic-box", function () {
         symbol = "fa fa-times";
         $(this).addClass(symbol);
         if (check(symbol)) {
-            $("#tooltips").text("GAME OVER: Player 1 won!");
+            $("#tooltips").text("GAME OVER: Player\u00A01\u00A0won!");
         } else {
             $("#tooltips").text("Player 2 turn (O)");
             joueurNb = 2;
@@ -100,7 +100,7 @@ $(".tic-container").on("click", ".tic-box", function () {
         symbol = "fa fa-circle-o";
         $(this).addClass(symbol);
         if (check(symbol)) {
-            $("#tooltips").text("GAME OVER: Player 2 won!");
+            $("#tooltips").text("GAME OVER: Player\u00A02\u00A0won!");
         } else {
             $("#tooltips").text("Player 1 turn (X)");
             joueurNb = 1;
