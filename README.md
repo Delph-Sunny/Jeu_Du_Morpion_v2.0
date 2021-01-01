@@ -7,8 +7,8 @@ This is a different version of Jeu_Du_Morpion_v1.0. The goal is still to build a
 Here are the other criterias required for this story:    
  - Each player alternates.    
  - Selecting a cell already filled with a cross or a nought is not permitted.  
- - When 3 crosses or noughts are aligned, the cells background turns in green.  
- - When someone wins, the next click restart the game.    
+ - When 3 crosses or 3 noughts are aligned, the cells background turns in green.  
+ - When someone wins, the next click restarts the game.    
 
 App's URL: [link]
 
