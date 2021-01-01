@@ -1,6 +1,5 @@
 /*Variables for color */
 :root {
-  --appbg:  #afeffa;
   --textall: lavender;
   --tbborder: white;
   --hoverbg: #333535; 
@@ -15,7 +14,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-color: var(--appbg);
 }
 #tooltips { 
   font-size: 4vw; 
